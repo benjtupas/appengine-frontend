@@ -5,9 +5,12 @@
 		"local": "next dev",
 		"build": "next build",
 		"start": "next start",
+		"deploy": "npm run build && gcloud config set project APPENGINE_ID && gcloud app deploy app.yaml --quiet",
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@fontsource/roboto": "^4.5.1",
+		"@mui/material": "^5.2.7",
 		"next": "12.0.7",
 		"react": "17.0.2",
 		"react-dom": "17.0.2"
@@ -16,5 +19,4 @@
 		"@types/react": "^17.0.38",
 		"typescript": "^4.5.4"
 	}
-  }
-  
+}
